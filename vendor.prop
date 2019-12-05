@@ -290,6 +290,9 @@ ro.vendor.mtk_trustonic_tee_support=1
 # Thermal
 vendor.performance.frs.temp_src=/sys/class/thermal/thermal_zone51/temp
 
+# Verity
+ro.apk_verity.mode=2
+
 # Wifi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
