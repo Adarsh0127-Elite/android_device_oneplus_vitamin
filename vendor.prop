@@ -149,6 +149,9 @@ ro.vendor.rc=/vendor/etc/init/hw/
 # Keystore
 ro.hardware.kmsetkey=trustonic
 
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
