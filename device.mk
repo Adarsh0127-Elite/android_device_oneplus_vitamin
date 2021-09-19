@@ -235,6 +235,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
+    OPlusNfcResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
@@ -243,12 +244,10 @@ PRODUCT_PACKAGES += \
     OPlusWifiResTarget
 
 PRODUCT_PACKAGES += \
-    OPlusNfcResTarget
-
-PRODUCT_PACKAGES += \
     ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \
+    OplusDozeResTarget \
     PowerOffAlarmResTarget
 
 # Partitions
