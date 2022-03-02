@@ -283,6 +283,9 @@ ro.soc.model=MT6983Z/CZA
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 
+# USB
+vendor.usb.product_string=OnePlus Nord 3 5G
+
 # Verity
 ro.apk_verity.mode=2
 
