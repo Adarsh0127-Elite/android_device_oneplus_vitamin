@@ -60,26 +60,23 @@ fi
 function blob_fixup {
     case "$1" in
         system_ext/lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
+            grep -q "libshim_sink.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
             ;;
         system_ext/etc/init/init.vtservice.rc|vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
             sed -i "s|start|enable|g" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
-            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|vendor/lib64/hw/audio.primary.mediatek.so)
+            grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
         vendor/bin/mnld|vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/mt6983/libaalservice.so)
-            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
-            ;;
-        vendor/lib64/hw/audio.primary.mediatek.so)
-            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            grep -q "libshim_sensors.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
         vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            grep -q "libshim_sensors.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
         vendor/lib64/mt6983/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
