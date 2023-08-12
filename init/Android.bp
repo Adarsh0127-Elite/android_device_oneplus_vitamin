@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "fstab.mt6983",
+    src: "fstab.mt6983",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
