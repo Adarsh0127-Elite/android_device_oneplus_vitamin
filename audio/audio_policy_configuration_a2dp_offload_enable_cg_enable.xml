@@ -358,35 +358,6 @@
 
         </module>
 
-<!-- #ifdef OPLUS_FEATURE_BTAUDIO_BINAURAL_RECORD
-//WangDong@MULTIMEDIA.AUDIOSERVER.FRAMEWORK, 2021/10/01, add for binaural record-->
-        <module name="binaural_record" halVersion="3.0">
-            <mixPorts>
-                <mixPort name="Bluetooth record" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                            samplingRates="44100 48000 96000"
-                            channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
-                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
-                            samplingRates="44100 48000 96000"
-                            channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
-                </mixPort>
-            </mixPorts>
-
-            <devicePorts>
-                <devicePort tagName="BT Record in" type="AUDIO_DEVICE_IN_PROXY" role="source" address="">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
-                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
-                             samplingRates="44100 48000 96000" channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
-                </devicePort>
-            </devicePorts>
-
-            <routes>
-                <route type="mix" sink="Bluetooth record" sources="BT Record in"/>
-            </routes>
-        </module>
-<!--endif OPLUS_FEATURE_BTAUDIO_BINAURAL_RECORD-->
-
         <!-- BT Audio HAL -->
         <xi:include href="bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml"/>
 
@@ -398,13 +369,6 @@
 
         <!-- Remote Submix Audio HAL -->
         <xi:include href="r_submix_audio_policy_configuration.xml"/>
-
-<!-- #ifndef OPLUS_FEATURE_VIRTUAL_AUDIO
-//Zhanghui@NEOP.ABILITY.VD , 2020/07/31, Added for OCar & Virtual Audio HAL-->
-        <xi:include href="/odm/etc/virtual_audio_policy_configuration.xml">
-            <xi:fallback></xi:fallback>
-        </xi:include>
-<!--endif OPLUS_FEATURE_VIRTUAL_AUDIO-->
 
     </modules>
     <!-- End of Modules section -->
