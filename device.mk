@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResAce2V \
     OPlusSettingsProviderResNord3 \
+    OPlusSystemUIResTarget \
     OPlusTetheringConfigResTarget \
     OPlusWifiResTarget
 
