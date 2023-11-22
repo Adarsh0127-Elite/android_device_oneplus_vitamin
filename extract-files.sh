@@ -59,8 +59,12 @@ fi
 
 function blob_fixup {
     case "$1" in
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/mt6983/libaalservice.so)
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            ;;
         vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
     esac
 }
