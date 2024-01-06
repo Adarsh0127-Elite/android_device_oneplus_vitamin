@@ -1123,11 +1123,6 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 
-# IR
-odm/bin/hw/android.hardware.ir-service
-odm/etc/init/android.hardware.ir-service.rc
-odm/etc/vintf/manifest/android.hardware.ir-service.xml
-
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
 vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
