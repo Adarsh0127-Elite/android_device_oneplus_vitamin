@@ -1657,7 +1657,6 @@ odm/lib64/hw/fingerprint.goodix_G3.default.so
 odm/lib64/libgf_hal_G3.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
 
 # FMRadio
 vendor/firmware/fm_cust.cfg
@@ -2121,6 +2120,15 @@ vendor/etc/thermal/thermal_policy_03.conf
 vendor/etc/thermal/thermal_policy_08.conf
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
+
+# Touch
+odm/bin/touchDaemon
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service
+odm/etc/init/init.touchDaemon.rc
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
+odm/etc/vintf/manifest/manifest_touch_aidl.xml
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
 
 # Touchpanel firmware
 odm/firmware/tp/22823/FW_S3910_TIANMA.img
