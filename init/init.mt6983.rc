@@ -155,14 +155,6 @@ on fs
     mount ext4 /mnt/vendor/oplusreserve /mnt/oplus/op2 bind
 #endif
 
-on fs
-    #ifndef OPLUS_FEATURE_CHG_BASIC
-    # Hailong.Shen@BSP.CHG.Basic, 2021/03/16, Modify DRIVER.ISO instead of iAmCdRom.iso
-    #mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-    #else  /* OPLUS_FEATURE_CHG_BASIC */
-    mount iso9660 loop@/vendor/etc/DRIVER.ISO /mnt/cd-rom ro
-    #endif /* !OPLUS_FEATURE_CHG_BASIC */
-
 on late-fs
     write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
