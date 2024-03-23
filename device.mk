@@ -283,6 +283,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor
 
+# Power-off Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
