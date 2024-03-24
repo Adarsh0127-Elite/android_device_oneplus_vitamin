@@ -304,7 +304,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     LineageSDKResTarget \
-    LineageSettingsProviderResTarget
+    LineageSettingsProviderResTarget \
+    PowerOffAlarmResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
