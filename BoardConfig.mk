@@ -147,3 +147,6 @@ BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 0
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 4
+
+# Inherit the proprietary files
+include vendor/oneplus/vitamin/BoardConfigVendor.mk
