@@ -94,6 +94,10 @@ KERNEL_PATH := device/oneplus/vitamin-kernel
 
 PRODUCT_VENDOR_KERNEL_HEADERS := $(KERNEL_PATH)/kernel-headers
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
