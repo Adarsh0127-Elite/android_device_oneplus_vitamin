@@ -71,7 +71,7 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-        vendor/bin/mnld|vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/mt6983/libaalservice.so)
+        vendor/bin/mnld|vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/liboplus_mtkcam_lightsensorprovider.so|vendor/lib64/mt6983/libaalservice.so)
             grep -q "libshim_sensors.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
         vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so)
