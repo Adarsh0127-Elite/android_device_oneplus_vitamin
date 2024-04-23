@@ -133,6 +133,7 @@ ro.vendor.mtk_log_hide_gps=0
 # Graphics
 graphics.gpu.profiler.support=true
 ro.hardware.egl=meow
+ro.hardware.vulkan=mali
 
 # Incremental FS
 ro.incremental.enable=yes
