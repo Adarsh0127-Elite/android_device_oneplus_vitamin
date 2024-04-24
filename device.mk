@@ -241,9 +241,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6983.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6983.rc
 
 # Kernel
-KERNEL_PATH := device/oneplus/vitamin-kernel
-
-PRODUCT_VENDOR_KERNEL_HEADERS := $(KERNEL_PATH)/kernel-headers
+TARGET_BOARD_KERNEL_HEADERS := device/oneplus/vitamin-kernel/kernel-headers
 
 # Keylayout
 PRODUCT_COPY_FILES += \
