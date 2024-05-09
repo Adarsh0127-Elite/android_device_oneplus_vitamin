@@ -233,6 +233,9 @@
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
+    <!-- Bytes that the PinnerService will pin for Home app -->
+    <integer name="config_pinnerHomePinBytes">6291456</integer>
+
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
 
