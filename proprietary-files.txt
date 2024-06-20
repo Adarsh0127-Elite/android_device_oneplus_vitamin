@@ -1130,7 +1130,6 @@ odm/lib64/libstfaceunlockppl.so
 odm/lib64/libstfd_mobile_api.so
 odm/lib64/libswresample.so
 odm/lib64/libswscale.so
-odm/lib64/libui.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/libyuvwrapper.so
 odm/lib64/mt6983/gc02m1_mipi_raw_22823_IdxMgr.so;SYMLINK=odm/lib64/gc02m1_mipi_raw_22823_IdxMgr.so
