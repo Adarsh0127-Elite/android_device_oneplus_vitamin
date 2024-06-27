@@ -1,15 +1,15 @@
 cc_library_shared {
     name: "libshim_sensors",
     whole_static_libs: [
-        "android.hardware.sensors@1.0-convert"
+        "android.hardware.sensors@1.0-convert",
     ],
     shared_libs: [
         "libhardware",
         "libhidlbase",
-        "android.hardware.sensors@1.0"
+        "android.hardware.sensors@1.0",
     ],
     compile_multilib: "64",
-    vendor: true
+    vendor: true,
 }
 
 cc_library_shared {

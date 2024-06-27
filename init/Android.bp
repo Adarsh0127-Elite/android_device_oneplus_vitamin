@@ -8,77 +8,77 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.cgroup.rc",
     src: "init.cgroup.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.common.rc",
     src: "init.connectivity.common.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.rc",
     src: "init.connectivity.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.modem.rc",
     src: "init.modem.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6983.rc",
     src: "init.mt6983.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6983.usb.rc",
     src: "init.mt6983.usb.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mtkgki.rc",
     src: "init.mtkgki.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.oplus.rc",
     src: "init.oplus.rc",
-    sub_dir: "init",
+    relative_install_path: "init",
     device_specific: true,
 }
 
 prebuilt_etc {
     name: "init.project.rc",
     src: "init.project.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "init.sensor_2_0.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init_conninfra.rc",
     src: "init_conninfra.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
