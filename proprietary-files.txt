@@ -1793,7 +1793,6 @@ vendor/lib64/hw/consumerir.default.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
 vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
