@@ -1116,6 +1116,7 @@ odm/lib64/libop-ai-beauty-body-detection.so
 odm/lib64/libop-ai-beauty-faceretouch-cn.so
 odm/lib64/liboplus_platform_hwi.so
 odm/lib64/liboplusblur_capture_api.so
+odm/lib64/libormshalclient.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
@@ -1142,6 +1143,7 @@ odm/lib64/mt6983/s5k3p9sp_mipi_raw_22823_IdxMgr.so;SYMLINK=odm/lib64/s5k3p9sp_mi
 odm/lib64/mt6983/s5k3p9sp_mipi_raw_22823_tuning.so;SYMLINK=odm/lib64/s5k3p9sp_mipi_raw_22823_tuning.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.orms@1.0.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform.so
 vendor/bin/hw/mt6983/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
 vendor/bin/mt6983/jpegtool;SYMLINK=vendor/bin/jpegtool
@@ -1598,6 +1600,7 @@ odm/etc/PanelChaplin/panelchaplin
 odm/lib64/libPanelChaplin_mtk.so
 odm/lib64/libPanelChaplin_wrapper.so
 odm/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so
+vendor/lib64/vendor.display.PanelChaplin@1.0.so
 
 # Display (Picture Quality)
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
@@ -1948,6 +1951,8 @@ odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 odm/etc/powerhal/power_app_cfg.xml
 odm/etc/powerhal/powercontable.xml
 odm/etc/powerhal/powerscntbl.xml
+odm/lib64/liboplus-uah-client.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 vendor/bin/cpufreq_bouncing_param.sh
 vendor/bin/fpsgo
 vendor/bin/gbe
@@ -1980,6 +1985,7 @@ odm/bin/init.subsys.sh
 odm/etc/MNL_Config.xml
 odm/etc/ecc_list.xml
 odm/etc/plugin_config.xml
+odm/lib64/lib-virtual-modem-protos.so
 odm/lib64/libdmtp-protos-lite.so
 odm/lib64/libdmtpclient.so
 odm/lib64/libnvramapisv1.so

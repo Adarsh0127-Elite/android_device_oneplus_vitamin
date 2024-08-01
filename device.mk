@@ -106,6 +106,7 @@ TARGET_SCREEN_WIDTH := 1240
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
+    android.frameworks.stats-V1-ndk_platform.vendor \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
     android.hardware.camera.device@3.3.vendor \
@@ -138,6 +139,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.frameworks.sensorservice@1.0.vendor \
     libdrm.vendor \
     libui.vendor \
@@ -189,6 +191,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -281,6 +286,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -375,6 +384,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
+    libdumpstateutil.vendor \
     libsensorndkbridge \
     libshim_sensors
 
