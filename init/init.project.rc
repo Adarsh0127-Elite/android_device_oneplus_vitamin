@@ -37,12 +37,6 @@ on post-fs-data
     chmod 0660 /dev/spm
     chown system system /dev/spm
 
-#ifdef OPLUS_FEATURE_CHG_BASIC
-# Hailong.Shen@BSP.CHG.Basic, 2021/03/13, Add kernel log control for release verion
-on property:ro.build.release_type=true
-    write /proc/sys/kernel/printk  "6 6 1 7"
-#endif /* OPLUS_FEATURE_CHG_BASIC */
-
 on init
     # Refer to http://source.android.com/devices/tech/storage/index.html
     # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
@@ -64,15 +58,3 @@ on property:sys.boot_completed=1
     write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
     write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
     write /sys/kernel/tracing/instances/mmstat/tracing_on 1
-
-#ifdef OPLUS_BUG_STABILITY
-#Peng.Yao 2021/11/04 turn off ftrace in agingtest version
-on property:sys.boot_completed=1 && property:persist.sys.agingtest=1
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
-    write /sys/kernel/tracing/instances/bootreceiver/tracing_on 0
-    write /sys/kernel/tracing/instances/bsp/tracing_on 0
-    write /sys/kernel/tracing/instances/connsys/tracing_on 0
-    write /sys/kernel/tracing/instances/slog/tracing_on 0
-    write /sys/kernel/tracing/instances/wifi/tracing_on 0
-    write /sys/kernel/tracing/tracing_on 0
-#endif
