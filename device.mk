@@ -245,6 +245,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.enableswap \
     fstab.mt6983 \
     fstab.mt6983.vendor_ramdisk \
     init.cgroup.rc \
