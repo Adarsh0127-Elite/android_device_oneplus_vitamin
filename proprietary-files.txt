@@ -1538,6 +1538,8 @@ vendor/etc/init/chipinfo_init.rc
 
 # Connectivity
 vendor/bin/conninfra_loader
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.conninfra.rc
 vendor/firmware/conninfra.cfg
 vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin
@@ -1659,6 +1661,7 @@ odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 
 # FMRadio
+vendor/etc/init/init.fmradio_drv.rc
 vendor/firmware/fm_cust.cfg
 vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
@@ -1689,6 +1692,9 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.gps_pwr.rc
+vendor/etc/init/init.gps_scp.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/slp_conf
 vendor/etc/vintf/manifest/gnss-default.xml
@@ -1967,6 +1973,7 @@ vendor/etc/gbe.cfg
 vendor/etc/init/bootperf.rc
 vendor/etc/init/fpsgo.rc
 vendor/etc/init/gbe.rc
+vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/etc/power_app_cfg.xml
