@@ -1,6 +1,10 @@
 subsystem adf
     devname uevent_devname
 
+# NFC
+/dev/nq-nci    0660    nfc               nfc
+/dev/p73       0660    secure_element    secure_element
+
 # Reserve
 /dev/block/by-name/oplusreserve1   0660   system   system
 /dev/block/by-name/oplusreserve3   0660   root     system
