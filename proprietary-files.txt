@@ -1813,11 +1813,6 @@ vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.truston
 vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.so
 vendor/lib64/libkmsetkey.so
 
-# Lights
-vendor/bin/hw/android.hardware.lights-service.mediatek
-vendor/etc/init/lights-mtk-default.rc
-vendor/etc/vintf/manifest/lights-mtk-default.xml
-
 # Media (Codec2)
 odm/lib64/libc2filterplugin.so
 odm/lib64/libmtk_osie_process.so
