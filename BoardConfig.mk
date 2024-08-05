@@ -148,9 +148,7 @@ BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6983
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-BOARD_POWER_CUSTOM_BOARD_LIB += \
-    vendor.oplus.hardware.touch-V1-ndk
+TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH)/power:libperfmgr-ext-vitamin
 
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true

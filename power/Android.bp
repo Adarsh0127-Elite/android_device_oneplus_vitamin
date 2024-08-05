@@ -1,0 +1,18 @@
+soong_namespace {
+    imports: [
+        "hardware/oplus",
+    ],
+}
+
+cc_library_static {
+    name: "libperfmgr-ext-vitamin",
+    vendor: true,
+    srcs: [
+        "power-mode.cpp",
+    ],
+    shared_libs: [
+        "android.hardware.power-V4-ndk",
+        "libbase",
+    ],
+    whole_static_libs: ["vendor.oplus.hardware.touch-V1-ndk"],
+}
