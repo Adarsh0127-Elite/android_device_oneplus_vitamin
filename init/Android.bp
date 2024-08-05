@@ -12,13 +12,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.cgroup.rc",
-    src: "init.cgroup.rc",
-    relative_install_path: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.connectivity.common.rc",
     src: "init.connectivity.common.rc",
     relative_install_path: "init/hw",
@@ -42,6 +35,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mt6983.rc",
     src: "init.mt6983.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6983.power.rc",
+    src: "init.mt6983.power.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
