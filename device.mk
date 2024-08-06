@@ -246,11 +246,11 @@ PRODUCT_PACKAGES += \
     fstab.enableswap \
     fstab.mt6983 \
     fstab.mt6983.vendor_ramdisk \
-    init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6983.rc \
+    init.mt6983.power.rc \
     init.mt6983.usb.rc \
     init.mtkgki.rc \
     init.oplus.rc \
