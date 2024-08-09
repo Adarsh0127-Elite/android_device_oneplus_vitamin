@@ -55,6 +55,7 @@ on post-fs-data
 
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
+on boot
     # boot perf. tune
     write /dev/cpuctl/system-background/cpu.uclamp.min 100
     write /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive 1
