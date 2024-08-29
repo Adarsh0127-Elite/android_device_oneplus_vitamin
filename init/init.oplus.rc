@@ -29,3 +29,7 @@ on property:ro.boot.prjname=*
 
     # Radio
     setprop ro.product.hw ${ro.boot.prjname}
+
+on property:sys.boot_completed=1
+    # USB
+    write /sys/devices/virtual/oplus_chg/usb/otg_switch 1
