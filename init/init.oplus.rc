@@ -1,11 +1,60 @@
 #
-# Copyright (C) 2024 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
 on init
     # Charger
+    chown system system /dev/oplus_chg
+    chown system system /proc/charger/charger_factorymode_test
+    chown system system /proc/charger/hmac
+    chown system system /proc/charger/integrate_gauge_fcc_flag
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /proc/charger_critical_log
+    chown system system /proc/charger_cycle
+    chown system system /proc/fastchg_fw_update
+    chown system system /proc/tbatt_pwroff
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /sys/class/oplus_chg/battery/bms_heat_temp_compensation
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/em_mode
+    chown system system /sys/class/oplus_chg/battery/gsm_call_ongoing
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_status
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_test
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_value
+    chown system system /sys/class/oplus_chg/battery/short_ic_volt_thresh
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/common/bob_status
+    chown system system /sys/class/oplus_chg/common/bob_status_reg
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_count
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_status
+    chown system system /sys/class/oplus_chg/common/time_zone
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/wireless/cp_current_now
+    chown system system /sys/class/oplus_chg/wireless/cp_voltage_now
+    chown system system /sys/class/oplus_chg/wireless/real_type
+    chown system system /sys/class/oplus_chg/wireless/tx_current_now
+    chown system system /sys/class/oplus_chg/wireless/tx_voltage_now
+    chown system system /sys/class/oplus_chg/wireless/wireless_mode
+    chown system system /sys/class/oplus_chg/wireless/wireless_type
+    chown system system /sys/class/power_supply/usb/type
+    chown system system /sys/class/power_supply/wireless/current_max
+    chown system system /sys/class/power_supply/wireless/current_now
+    chown system system /sys/class/power_supply/wireless/online
+    chown system system /sys/class/power_supply/wireless/present
+    chown system system /sys/class/power_supply/wireless/type
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+
     write /proc/fastchg_fw_update 1
     write /proc/ui_soc_decimal 1
 
