@@ -63,14 +63,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so'),
     ('vendor/bin/mnld', 'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so', 'vendor/lib64/liboplus_mtkcam_lightsensorprovider.so',
     'vendor/lib64/mt6983/libaalservice.so'): blob_fixup()
-        .add_needed('libshim_sensors.so'),
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
     'vendor/lib64/hw/mt6983/android.hardware.camera.provider@2.6-impl-mediatek.so': blob_fixup()
         .add_needed('libcamera_metadata_shim.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
-        .add_needed('libshim_sensors.so')
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .binary_regex_replace(b'/my_product/vendor/etc/cust_silky_brightness_%s_%s.xml', b'/vendor/etc/cust_silky_brightness_%s_%s.xml\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
         .binary_regex_replace(b'/my_product/vendor/etc/cust_silky_brightness_%s.xml', b'/vendor/etc/cust_silky_brightness_%s.xml\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
         .replace_needed('libutils.so', 'libutils-v32.so'),
