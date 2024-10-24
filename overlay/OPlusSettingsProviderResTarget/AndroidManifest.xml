@@ -4,13 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.providers.settings.overlay.oplus.ace2v">
+    package="com.android.providers.settings.overlay.oplus.target">
 
     <application android:hasCode="false"/>
     <overlay
         android:isStatic="true"
         android:priority="350"
-        android:targetPackage="com.android.providers.settings"
-        android:requiredSystemPropertyName="ro.boot.prjname"
-        android:requiredSystemPropertyValue="22823" />
+        android:targetPackage="com.android.providers.settings" />
 </manifest>
