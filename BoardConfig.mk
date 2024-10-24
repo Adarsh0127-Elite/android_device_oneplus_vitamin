@@ -161,7 +161,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-VENDOR_SECURITY_PATCH := 2024-09-05
+VENDOR_SECURITY_PATCH := 2024-10-05
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
