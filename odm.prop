@@ -19,10 +19,6 @@ persist.vendor.vonr_setting_support=1
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6983
 
-# Project
-ro.product.hw=21871
-ro.separate.soft=21871
-
 # Sensor
 persist.sys.enable_mtk_scp_dump=1
 ro.vendor.oplus.sensor.report_brightness=true
