@@ -417,6 +417,10 @@ vendor/etc/smartpa_param/tfa98xx_music.bin
 vendor/etc/smartpa_param/tfa98xx_ringtone.bin
 vendor/etc/smartpa_param/tfa98xx_voice.bin
 
+# Audio (Test path)
+odm/etc/audio/test_path/common/mixer_paths.xml
+odm/etc/audio/test_path/mixer_paths.xml
+
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
