@@ -1073,7 +1073,6 @@ vendor/firmware/mali_csffw.bin
 vendor/firmware/mali_csffw_reload.bin
 
 # Health
-odm/etc/bin/gauge_authenticate
 vendor/bin/fuelgauged
 vendor/lib64/libfgauge_gm30.so
 
