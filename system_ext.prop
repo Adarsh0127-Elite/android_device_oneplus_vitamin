@@ -1,2 +1,22 @@
+# Audio
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+ro.config.vc_call_vol_steps=9
+
 # Display
 persist.sys.brightness.low.gamma=true
+persist.sys.sf.color_saturation=1.0
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Wifi
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0

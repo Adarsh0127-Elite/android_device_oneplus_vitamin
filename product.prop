@@ -1,20 +1,8 @@
-# Audio
-ro.config.vc_call_vol_steps=9
-
-# Display
-persist.sys.sf.color_saturation=1.0
-persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
-
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
 # GPS
 ro.oplus.mtk_gps_mpe=1
-
-# Radio
-persist.vendor.entitlement_enabled=1
-ro.vendor.mtk_md3_support=0
-ro.vendor.mtk_mobile_management=0
 
 # SKU
 ro.boot.hardware.sku=vitamin
