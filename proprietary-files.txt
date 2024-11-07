@@ -946,6 +946,8 @@ vendor/lib64/vendor.display.PanelChaplin@1.0.so
 
 # Display (Picture Quality)
 my_product/vendor/etc/cust_silky_brightness_22823_Tianma_NT37705_Tianma4095.xml:vendor/etc/cust_silky_brightness_22823_Tianma_NT37705_Tianma4095.xml
+odm/etc/cust_color_22823_tianma.xml
+odm/etc/cust_pq_22823_tianma.xml
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/cust_color.xml
 vendor/etc/cust_pq.xml
