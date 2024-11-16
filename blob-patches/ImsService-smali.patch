@@ -1,16 +1,5 @@
---- a/AndroidManifest.xml
-+++ b/AndroidManifest.xml
-@@ -52,6 +52,10 @@
-     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:directBootAware="true" android:extractNativeLibs="false" android:label="ImsApp" android:name="com.mediatek.ims.ImsApp" android:usesNonSdkApi="true">
-         <uses-library android:name="com.mediatek.ims.oemplugin" android:required="false"/>
-         <uses-library android:name="com.mediatek.ims.plugin" android:required="false"/>
-+        <uses-library android:name="mediatek-common" android:required="true"/>
-+        <uses-library android:name="mediatek-framework" android:required="true"/>
-+        <uses-library android:name="mediatek-ims-base" android:required="true"/>
-+        <uses-library android:name="mediatek-ims-common" android:required="true"/>
-         <service android:exported="true" android:name="com.mediatek.ims.MtkDynamicImsService" android:permission="android.permission.BIND_IMS_SERVICE">
-             <meta-data android:name="android.telephony.ims.RCS_FEATURE" android:value="true"/>
-             <meta-data android:name="android.telephony.ims.MMTEL_FEATURE" android:value="true"/>
+diff --git a/smali/com/mediatek/ims/ImsConfigManager.smali b/smali/com/mediatek/ims/ImsConfigManager.smali
+index b2a3bfc..8559fc0 100644
 --- a/smali/com/mediatek/ims/ImsConfigManager.smali
 +++ b/smali/com/mediatek/ims/ImsConfigManager.smali
 @@ -129,7 +129,7 @@
@@ -34,6 +23,8 @@
  
      .line 157
      return-void
+diff --git a/smali/com/mediatek/ims/ImsService$MyHandler.smali b/smali/com/mediatek/ims/ImsService$MyHandler.smali
+index 031845b..86fea35 100644
 --- a/smali/com/mediatek/ims/ImsService$MyHandler.smali
 +++ b/smali/com/mediatek/ims/ImsService$MyHandler.smali
 @@ -2780,7 +2780,9 @@
@@ -47,6 +38,8 @@
  
      .line 2860
      .end local v5    # "filter":Landroid/content/IntentFilter;
+diff --git a/smali/com/mediatek/ims/MtkSuppServExt.smali b/smali/com/mediatek/ims/MtkSuppServExt.smali
+index d9d5367..1d53df7 100644
 --- a/smali/com/mediatek/ims/MtkSuppServExt.smali
 +++ b/smali/com/mediatek/ims/MtkSuppServExt.smali
 @@ -1644,7 +1644,7 @@
@@ -69,6 +62,8 @@
  
      .line 515
      iget-object v1, p0, Lcom/mediatek/ims/MtkSuppServExt;->mContext:Landroid/content/Context;
+diff --git a/smali/com/mediatek/ims/config/internal/ImsConfigController.smali b/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
+index 7ae8b4d..febba9e 100644
 --- a/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
 +++ b/smali/com/mediatek/ims/config/internal/ImsConfigController.smali
 @@ -232,7 +232,7 @@
@@ -135,6 +130,8 @@
      .line 583
      .end local v3    # "imsMgr":Lcom/mediatek/ims/internal/MtkImsManager;
      iget v3, v1, Lcom/mediatek/ims/config/internal/ImsConfigController$FeatureResult;->featureValue:I
+diff --git a/smali/com/mediatek/ims/config/internal/MtkImsConfigImpl.smali b/smali/com/mediatek/ims/config/internal/MtkImsConfigImpl.smali
+index a3396cc..c36ff0b 100644
 --- a/smali/com/mediatek/ims/config/internal/MtkImsConfigImpl.smali
 +++ b/smali/com/mediatek/ims/config/internal/MtkImsConfigImpl.smali
 @@ -317,21 +317,6 @@
@@ -179,6 +176,8 @@
  
      .line 437
      return-void
+diff --git a/smali/com/mediatek/ims/internal/ImsVTProviderUtil.smali b/smali/com/mediatek/ims/internal/ImsVTProviderUtil.smali
+index 4d46d18..54ff4b8 100644
 --- a/smali/com/mediatek/ims/internal/ImsVTProviderUtil.smali
 +++ b/smali/com/mediatek/ims/internal/ImsVTProviderUtil.smali
 @@ -2330,7 +2330,7 @@
@@ -212,6 +211,8 @@
  
      .line 1007
      .end local v0    # "intentFilter":Landroid/content/IntentFilter;
+diff --git a/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali b/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali
+index cb88846..33fa5ec 100644
 --- a/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali
 +++ b/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali
 @@ -5201,7 +5201,7 @@
@@ -234,6 +235,8 @@
  
      .line 1574
      return-void
+diff --git a/smali/com/mediatek/wfo/impl/MwiService.smali b/smali/com/mediatek/wfo/impl/MwiService.smali
+index 41aaa15..f6682b3 100644
 --- a/smali/com/mediatek/wfo/impl/MwiService.smali
 +++ b/smali/com/mediatek/wfo/impl/MwiService.smali
 @@ -132,7 +132,7 @@
@@ -259,6 +262,8 @@
  
      .line 125
      .end local v2    # "multiSimConfigChanged":Landroid/content/IntentFilter;
+diff --git a/smali/com/mediatek/wfo/impl/WfcHandler.smali b/smali/com/mediatek/wfo/impl/WfcHandler.smali
+index e224b98..8732fdf 100644
 --- a/smali/com/mediatek/wfo/impl/WfcHandler.smali
 +++ b/smali/com/mediatek/wfo/impl/WfcHandler.smali
 @@ -3788,7 +3788,7 @@
@@ -281,6 +286,8 @@
  
      .line 664
      return-void
+diff --git a/smali/com/mediatek/wfo/impl/WifiPdnHandler.smali b/smali/com/mediatek/wfo/impl/WifiPdnHandler.smali
+index 1291b69..5126ade 100644
 --- a/smali/com/mediatek/wfo/impl/WifiPdnHandler.smali
 +++ b/smali/com/mediatek/wfo/impl/WifiPdnHandler.smali
 @@ -4161,7 +4161,7 @@
