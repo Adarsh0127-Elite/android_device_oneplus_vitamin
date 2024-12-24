@@ -869,10 +869,6 @@ vendor/lib64/libSQLiteModule_VER_ALL.so
 odm/firmware/fastchg/21871/oplus_vooc_fw_op10.bin
 odm/firmware/fastchg/22823/oplus_vooc_fw_op10.bin
 
-# Chipinfo
-vendor/bin/chipinfo
-vendor/etc/init/chipinfo_init.rc
-
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/etc/init/init.connfem.rc
