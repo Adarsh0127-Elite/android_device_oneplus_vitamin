@@ -1077,10 +1077,6 @@ vendor/lib64/libNoFpsActor.so
 vendor/firmware/mali_csffw.bin
 vendor/firmware/mali_csffw_reload.bin
 
-# Health
-vendor/bin/fuelgauged
-vendor/lib64/libfgauge_gm30.so
-
 # IMS
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
@@ -1259,7 +1255,6 @@ odm/etc/nfc/libnfc-nci.conf_21871:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68:vendor/firmware/sn100u.bin
 
 # NVRAM
-vendor/bin/fuelgauged_nvram
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
 vendor/etc/init/nvram_daemon.rc
