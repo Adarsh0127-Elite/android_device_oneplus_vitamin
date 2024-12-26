@@ -1398,21 +1398,6 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
-# Thermal
-vendor/bin/thermal_core
-vendor/etc/init/init.thermal_core.rc
-vendor/etc/thermal/disable_skin_control.conf
-vendor/etc/thermal/disable_thermal.conf
-vendor/etc/thermal/disable_thermal_temp.conf
-vendor/etc/thermal/disable_throttling.conf
-vendor/etc/thermal/thermal.conf
-vendor/etc/thermal/thermal_mtbf.conf
-vendor/etc/thermal/thermal_policy_00.conf
-vendor/etc/thermal/thermal_policy_01.conf
-vendor/etc/thermal/thermal_policy_02.conf
-vendor/etc/thermal/thermal_policy_03.conf
-vendor/etc/thermal/thermal_policy_08.conf
-
 # Touch
 odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/bin/touchDaemon
