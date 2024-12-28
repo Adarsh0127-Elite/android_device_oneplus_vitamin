@@ -334,6 +334,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/oneplus/vitamin/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.oplus
+
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUS_TOUCH,true)
+
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
