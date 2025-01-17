@@ -73,7 +73,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Display
 debug.mediatek.disp_decompress=1
 debug.renderengine.backend=skiaglthreaded
-debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
@@ -268,6 +267,7 @@ ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 ro.vendor.radio.max.multisim=dsds
 ro.vendor.sim_me_lock_mode=3
+ro.vendor.vodata_support=1
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 vendor.connsys.driver.ready=no

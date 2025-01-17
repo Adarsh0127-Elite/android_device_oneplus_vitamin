@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Nord 3 5G (CPH2493_14.0.0.560(EX01)).
+## are from OnePlus Nord 3 5G (CPH2493_15.0.0.601(EX01)).
 
 # AEE
 vendor/lib64/libaedv.so
@@ -519,7 +519,6 @@ vendor/lib64/libcamalgo.warp.so;DISABLE_CHECKELF
 vendor/lib64/libcamera_sendextdata.so
 vendor/lib64/libcameracustom.boostpool.so
 vendor/lib64/libcamxjson.so
-vendor/lib64/libcustomer_camerathermalpolicy.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/libcustomer_ulog.so
 vendor/lib64/libfeaturepolicy.so
@@ -540,6 +539,7 @@ vendor/lib64/libmtkcam_hal_custom_utils.so
 vendor/lib64/libmtkcam_ispEngine.so
 vendor/lib64/liboplus.difference.analysis.so
 vendor/lib64/liboplus_mtkcam_lightsensorprovider.so
+vendor/lib64/libthirdcapability.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
@@ -1259,7 +1259,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # OLC
 odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.olc2-V2-ndk_platform.so
 
 # Osense
 odm/lib64/libosenseaidlhalclient.so
@@ -1285,6 +1285,7 @@ odm/lib64/libcommcenterutils.so
 odm/lib64/libdmtp-protos-lite.so
 odm/lib64/libdmtpclient.so
 odm/lib64/libnvramapisv1.so
+odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so
 vendor/bin/bip_ap
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
