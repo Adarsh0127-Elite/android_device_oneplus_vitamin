@@ -1453,6 +1453,10 @@ vendor/etc/init/trustonic.rc
 vendor/lib64/libMcClient.so
 vendor/lib64/libTEECommon.so
 
+# Vibrator
+odm/etc/aac_richtap.config
+odm/lib64/libaacvibrator.so
+
 # Vibrator firmware
 odm/firmware/100ms_RTP_300.bin
 odm/firmware/120ms_RTP_301.bin
