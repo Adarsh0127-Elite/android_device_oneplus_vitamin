@@ -3,3 +3,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # GPS
 ro.oplus.mtk_gps_mpe=1
+
+# SystemUI
+persist.sysui.disableBlur=true
