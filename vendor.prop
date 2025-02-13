@@ -106,6 +106,7 @@ ro.surface_flinger.uclamp.min=200
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mml.mtk_mml_support=1
+ro.vendor.mtk_aal_support=1
 ro.vendor.mtk_aod_support=1
 ro.vendor.mtk_cuva_hdr_support=1
 ro.vendor.mtk_dre30_support=1
