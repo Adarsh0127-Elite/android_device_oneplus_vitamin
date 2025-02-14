@@ -77,6 +77,14 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/lib3a.ae.pipe.so', 'vendor/lib64/mt6983/lib3a.awbsync.so', 'vendor/lib64/mt6983/lib3a.flash.so',
     'vendor/lib64/mt6983/lib3a.sensors.color.so', 'vendor/lib64/mt6983/lib3a.sensors.flicker.so'): blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/libmidasserviceintf_aidl.so': blob_fixup()
         .replace_needed('android.frameworks.stats-V1-ndk_platform.so', 'android.frameworks.stats-V1-ndk.so'),
     'vendor/lib64/mt6983/libmnl.so': blob_fixup()
