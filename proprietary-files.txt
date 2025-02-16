@@ -1141,9 +1141,6 @@ vendor/etc/media_codecs_performance.xml
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
-vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/seccomp_policy/mediaextractor.policy
-vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_mtk_c2store.so
