@@ -26,10 +26,6 @@ on init
     # Disable multiple kswapd threads
     write /proc/sys/vm/kswapd_threads 1
 
-    # Set schedutil rate limit for efficiency cores and super cores
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us 5000 
-    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/rate_limit_us 2000
-
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
