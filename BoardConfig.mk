@@ -95,8 +95,6 @@ BOARD_VENDOR_KERNEL_MODULES += \
     $(BOARD_KERNEL_MODULE_DIR)/wmt_chrdev_wifi_connac2.ko
 
 # Partitions
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     boot \
     odm \
