@@ -77,6 +77,8 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/lib3a.ae.pipe.so', 'vendor/lib64/mt6983/lib3a.awbsync.so', 'vendor/lib64/mt6983/lib3a.flash.so',
     'vendor/lib64/mt6983/lib3a.sensors.color.so', 'vendor/lib64/mt6983/lib3a.sensors.flicker.so'): blob_fixup()
         .add_needed('liblog.so'),
+    ('vendor/lib64/mt6983/libcam.hal3a.so', 'vendor/lib64/mt6983/libcam.hal3a.ctrl.so', 'vendor/lib64/mt6983/libmtkcam_request_requlator.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_createFromHandle')
