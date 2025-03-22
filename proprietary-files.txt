@@ -1370,15 +1370,6 @@ vendor/lib64/libhfmanagerwrapper.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 
-# Soter
-vendor/bin/hw/vendor.trustonic.soter@1.0-service
-vendor/etc/init/vendor.trustonic.soter@1.0-service.rc
-vendor/etc/vintf/manifest/manifest_soter_aidl.xml
-vendor/lib64/libMcTeeSoter.so
-vendor/lib64/libSoterProvision.so
-vendor/lib64/soter_attk_provision.so
-vendor/lib64/vendor.trustonic.hardware.soter-V1-ndk_platform.so
-
 # Tether offload
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
