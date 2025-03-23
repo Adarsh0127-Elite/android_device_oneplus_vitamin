@@ -39,6 +39,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/android.hardware.ir-service': blob_fixup()
         .replace_needed('android.hardware.ir-V1-ndk_platform.so', 'android.hardware.ir-V1-ndk.so'),
+    ('odm/lib64/libPanelChaplin_mtk.so', 'vendor/lib64/mt6983/libmtkcam_stdutils.so'): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
     'odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so': blob_fixup()
         .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
@@ -94,8 +96,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/mt6983/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
-    'vendor/lib64/mt6983/libmtkcam_stdutils.so': blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
