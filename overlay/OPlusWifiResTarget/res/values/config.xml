@@ -12,10 +12,10 @@
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
          is no longer indicative, and a separate config now exists for each band -->
-    <bool translatable="false" name ="config_wifi5ghzSupport">true</bool>
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
 
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
+    <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
 
     <!-- Indicates that bridged AP mode is supported on this device -->
     <bool translatable="false" name="config_wifiBridgedSoftApSupported">true</bool>
