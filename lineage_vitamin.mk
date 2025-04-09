@@ -18,8 +18,8 @@ PRODUCT_NAME := lineage_vitamin
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_mssi_64_cn_armv82-user 15 AP3A.240617.008 1740491028583 release-keys" \
-    BuildFingerprint=OnePlus/CPH2493EEA/OP556FL1:15/AP3A.240617.008/T.R4T3.1cb6768-1-3de:user/release-keys \
+    BuildDesc="sys_mssi_64_cn_armv82-user 15 AP3A.240617.008 1742885549055 release-keys" \
+    BuildFingerprint=OnePlus/CPH2493EEA/OP556FL1:15/AP3A.240617.008/T.R4T3.1d25f69-14c1e-114e5:user/release-keys \
     DeviceName=OP556FL1 \
     DeviceProduct=CPH2493EEA \
     SystemDevice=OP556FL1 \
