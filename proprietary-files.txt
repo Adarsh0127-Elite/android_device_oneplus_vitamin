@@ -471,9 +471,12 @@ odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/lib64/lib_rectify.so
 odm/lib64/libc++_shared.so
+odm/lib64/libcamera_core_hwi.so
 odm/lib64/libcustomer_cameradata.so
 odm/lib64/libmpbase.so
 odm/lib64/libmtkisp_metadata_v2.so
+odm/lib64/libocam_common.so
+odm/lib64/liboplus_platform_hwi.so
 odm/lib64/libormshalclient.so
 odm/lib64/mt6983/gc02m1_mipi_raw_22823_IdxMgr.so;SYMLINK=odm/lib64/gc02m1_mipi_raw_22823_IdxMgr.so
 odm/lib64/mt6983/gc02m1_mipi_raw_22823_tuning.so;SYMLINK=odm/lib64/gc02m1_mipi_raw_22823_tuning.so
