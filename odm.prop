@@ -1,3 +1,8 @@
+# Camera
+oplus.camera.packname=com.oplus.camera
+oplus.camera.activityname=com.oplus.camera
+ro.oplus.system.camera.name=com.oplus.camera
+
 # Display
 persist.odm.oplus.hdcp.support=1
 ro.vendor.oplus.display.cwb.aod_forbidden=1
