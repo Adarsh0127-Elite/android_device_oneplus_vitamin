@@ -469,12 +469,8 @@ odm/etc/camera/tonemap/tonemap_lut_8
 odm/etc/camera/tonemap/tonemap_lut_9
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
-odm/lib64/lib_rectify.so
-odm/lib64/libc++_shared.so
 odm/lib64/libcamera_core_hwi.so
-odm/lib64/libcustomer_cameradata.so
 odm/lib64/libmpbase.so
-odm/lib64/libmtkisp_metadata_v2.so
 odm/lib64/libocam_common.so
 odm/lib64/liboplus_platform_hwi.so
 odm/lib64/libormshalclient.so
@@ -503,6 +499,7 @@ vendor/lib64/hw/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 vendor/lib64/lib3a.ae.pipe.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libJpgEncPipe.so
+vendor/lib64/lib_rectify.so
 vendor/lib64/libaudodiag.so
 vendor/lib64/libcam.hal3a.soisdrv.so
 vendor/lib64/libcamalgo.WarpMapResizer.so
@@ -522,6 +519,7 @@ vendor/lib64/libcamalgo.warp.so
 vendor/lib64/libcamera_sendextdata.so
 vendor/lib64/libcameracustom.boostpool.so
 vendor/lib64/libcamxjson.so
+vendor/lib64/libcustomer_cameradata.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/libcustomer_ulog.so
 vendor/lib64/libfeaturepolicy.so
@@ -540,6 +538,7 @@ vendor/lib64/libmtkcam_fdWarpConvert.so
 vendor/lib64/libmtkcam_hal_custom_state.so
 vendor/lib64/libmtkcam_hal_custom_utils.so
 vendor/lib64/libmtkcam_ispEngine.so
+vendor/lib64/libmtkisp_metadata_v2.so
 vendor/lib64/liboplus.difference.analysis.so
 vendor/lib64/liboplus_mtkcam_lightsensorprovider.so
 vendor/lib64/libthirdcapability.so
