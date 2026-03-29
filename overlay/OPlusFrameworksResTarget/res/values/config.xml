@@ -197,6 +197,9 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
