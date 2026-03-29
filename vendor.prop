@@ -170,6 +170,9 @@ vendor.mtk.vdec.waitkeyframeforplay=15
 # Netflix
 ro.netflix.bsp_rev=MTK6983-35029-1
 
+# Performance
+vendor.perf.framepacing.enable=1
+
 # Neural Networks
 ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_support=1
