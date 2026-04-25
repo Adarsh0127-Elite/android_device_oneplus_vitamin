@@ -121,6 +121,14 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
         'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
+    (
+        'vendor/oneplus/vitamin/proprietary/odm/bin/touchDaemon',
+        'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
+        'vendor/lib64/hw/audio.primary.mediatek.so',
+        'vendor/lib64/librt_extamp_intf.so',
+        'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
