@@ -308,3 +308,6 @@ zygote.critical_window.minute=10
 # ScrollOptimizer
 persist.sys.perf.scroll_opt=true
 persist.sys.perf.scroll_opt.heavy_app=2
+
+# Increase max cached processes
+activity_manager.max_cached_processes=64
