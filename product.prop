@@ -3,3 +3,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # GPS
 ro.oplus.mtk_gps_mpe=1
+
+# MTE
+ro.arm64.memtag.bootctl_supported=1
