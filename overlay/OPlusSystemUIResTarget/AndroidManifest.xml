@@ -9,6 +9,6 @@
     <application android:hasCode="false"/>
     <overlay
         android:isStatic="true"
-        android:priority="350"
+        android:priority="200"
         android:targetPackage="com.android.systemui" />
 </manifest>

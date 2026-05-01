@@ -163,6 +163,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Radio
+ENABLE_VENDOR_RIL_SERVICE := true
+
 $(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
 
 $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
@@ -235,6 +237,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
 # Overlays
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusNfcResTarget \
@@ -242,8 +246,7 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlusTelephonyResTarget \
-    OPlusTetheringConfigResTarget \
-    OPlusWifiResTarget
+    OPlusTetheringConfigResTarget
 
 PRODUCT_PACKAGES += \
     ApertureResTarget \
