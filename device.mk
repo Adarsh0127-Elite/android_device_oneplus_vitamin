@@ -249,7 +249,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
-    OPlusTetheringConfigResTarget
 
 PRODUCT_PACKAGES += \
     ApertureResTarget \
@@ -379,6 +378,9 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-wrapper \
     android.hardware.wifi-service
+
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
