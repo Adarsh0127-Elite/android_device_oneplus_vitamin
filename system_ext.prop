@@ -15,3 +15,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
+
+# Memtag
+persist.arm64.memtag.default=off
