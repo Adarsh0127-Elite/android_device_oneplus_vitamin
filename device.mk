@@ -173,6 +173,9 @@ $(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
 
 $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 
+PRODUCT_PACKAGES += \
+    mdota_symlink
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.enableswap \
