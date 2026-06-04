@@ -287,7 +287,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm
 
 # Properties
-include $(DEVICE_PATH)/vendor_logtag.mk
+include hardware/mediatek/configs/properties/vendor_logtag.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
