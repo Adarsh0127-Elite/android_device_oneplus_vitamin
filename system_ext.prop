@@ -12,6 +12,9 @@ sys.brightness.disable_gamma_conversion=true
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+persist.vendor.vilte_support=0
+persist.vendor.ims_support=1
+persist.vendor.volte_support=1
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true

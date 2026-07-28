@@ -1085,11 +1085,6 @@ vendor/firmware/mali_csffw_reload.bin
 # IMS
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
-system_ext/framework/mediatek-common.jar
-system_ext/framework/mediatek-framework.jar
-system_ext/framework/mediatek-ims-base.jar
-system_ext/framework/mediatek-ims-common.jar
-system_ext/framework/mediatek-ims-extension-plugin.jar
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so
 system_ext/lib64/libimsma_adapt.so
@@ -1105,7 +1100,6 @@ system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/priv-app/ImsService/ImsService.apk
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vtservice_hidl
 vendor/bin/ipsec_mon
