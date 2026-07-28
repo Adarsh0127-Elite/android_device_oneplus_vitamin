@@ -946,7 +946,6 @@ odm/etc/PanelChaplin/PWM_D73_P3_5nit.txt
 odm/etc/PanelChaplin/panelchaplin
 odm/lib64/libPanelChaplin_mtk.so
 odm/lib64/libPanelChaplin_wrapper.so
-odm/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so
 vendor/lib64/vendor.display.PanelChaplin@1.0.so
 
 # Display (Picture Quality)
