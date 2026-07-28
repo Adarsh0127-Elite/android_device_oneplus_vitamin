@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Ace 2V (PHP110_15.0.0.901(CN01)).
+## are from OnePlus Ace 2V (PHP110_15.0.0.1301(CN01)).
 
 # AEE
 vendor/lib64/libaedv.so
@@ -499,6 +499,7 @@ vendor/lib64/hw/mt6983/vendor.mediatek.hardware.camera.atms@1.0-impl.so;SYMLINK=
 vendor/lib64/hw/mt6983/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/mt6983/vendor.mediatek.hardware.camera.isphal@1.1-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/hw/vendor.oplus.hardware.cameraextension-V1-service-impl.so
+vendor/lib64/hw/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
 vendor/lib64/hw/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 vendor/lib64/lib3a.ae.pipe.so
 vendor/lib64/libBasicModule.so
@@ -883,11 +884,11 @@ vendor/etc/init/init.connfem.rc
 vendor/etc/init/init.conninfra.rc
 vendor/firmware/conninfra.cfg
 
-# Connectivity firmware - from daumier-user 14 UP1A.231005.007 V816.0.9.0.ULGCNXM release-keys
-vendor/firmware/WIFI_RAM_CODE_soc7_0_1_t_1.bin:vendor/firmware/WIFI_RAM_CODE_soc7_0_1_1.bin|cc69ceed7520ef5cc75d0ad6fee75eff40fad5cd
-vendor/firmware/soc7_0_ram_bt_1_t_1_hdr.bin:vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin|b0af872784fa7a6193aa0c4165209d3a0d368029
-vendor/firmware/soc7_0_ram_mcu_1_t_1_hdr.bin:vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin|b5aea5f39505d22bd36169e450392ddd35e2a6b3
-vendor/firmware/soc7_0_ram_wmmcu_1_t_1_hdr.bin:vendor/firmware/soc7_0_ram_wmmcu_1_1_hdr.bin|91e35a899bc8e3b3b3d34874d27bc469ecbab91b
+# Connectivity firmware
+vendor/firmware/WIFI_RAM_CODE_soc7_0_1_1.bin
+vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
+vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc7_0_ram_wmmcu_1_1_hdr.bin
 
 # Display (AAL)
 vendor/lib64/libaal_cust.so
@@ -919,19 +920,19 @@ vendor/lib64/mt6983/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
 # Display (PanelChaplin)
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_1_100nit.odf
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_1_max.odf
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_2_100nit.odf
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_2_max.odf
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_Cinema.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D65_P3_100nit.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D65_P3_max.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D65_sRGB_100nit.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D65_sRGB_max.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D73_P3_100nit.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_D73_P3_max.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_Nature.txt
-odm/etc/PanelChaplin/21871_22823_Tianma_NT37705_Tianma4095_Vivid.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_1_100nit.odf
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_1_max.odf
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_2_100nit.odf
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_2_max.odf
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_Cinema.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D65_P3_100nit.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D65_P3_max.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D65_sRGB_100nit.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D65_sRGB_max.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D73_P3_100nit.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_D73_P3_max.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_Nature.txt
+odm/etc/PanelChaplin/22823_22823_Tianma_NT37705_Tianma4095_Vivid.txt
 odm/etc/PanelChaplin/MTK_Gamma_Table_12bit.txt
 odm/etc/PanelChaplin/PWM_D73_P3_10nit.txt
 odm/etc/PanelChaplin/PWM_D73_P3_15nit.txt
@@ -1358,6 +1359,7 @@ vendor/lib64/mt6983/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 
@@ -1415,18 +1417,22 @@ odm/firmware/tp/22823/LIMIT_S3910_TIANMA_AGING.img
 odm/firmware/tp/22823/LIMIT_S3910_TIANMA_HBP.img
 
 # Trusted Execution Environment (TEE)
+odm/vendor/app/mcRegistry/035c0000000000000000000000000000.drbin
 odm/vendor/app/mcRegistry/037c0000000000000000000000000000.drbin
 odm/vendor/app/mcRegistry/04320000000000000000000000000000.tlbin
 odm/vendor/app/mcRegistry/05050000000000000000000000000000.tabin
 odm/vendor/app/mcRegistry/05080000000000000000000000000000.tabin
 odm/vendor/app/mcRegistry/070f0000000000000000000000000a0a.tlbin
+odm/vendor/app/mcRegistry/070f0100000000000000000000000a0a.tabin
+odm/vendor/app/mcRegistry/071f0000000000000000000000000c0c.tabin
 odm/vendor/app/mcRegistry/08010203000000000000000000000000.tabin
+odm/vendor/app/mcRegistry/08020000000000000000000000000000.tabin
 odm/vendor/app/mcRegistry/09040000000000000000000000000000.tabin
 odm/vendor/app/mcRegistry/09060000000000000000000000000000.tabin
 odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin
 odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin
-odm/vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin
-odm/vendor/app/mcRegistry/b230723bcfe75f8581122dc1f8e52f4d.tabin
+odm/vendor/app/mcRegistry/876bfd9911894650b260fc7dd452d7ba.tabin
+odm/vendor/app/mcRegistry/a985d3eb3b524d44be6c628a813561e8.tabin
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
 vendor/app/mcRegistry/05120000000000000000000000000001.drbin
@@ -1496,9 +1502,7 @@ odm/firmware/aw8697_rtp.bin
 odm/firmware/awinic_haptic_params.bin
 
 # Widevine
-odm/lib64/liboemcrypto.so
-odm/lib64/libwvhdcpext.so
-odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so
+system/lib64/vendor.oplus.hardware.hdcp-V1-ndk.so:odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk.so
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml

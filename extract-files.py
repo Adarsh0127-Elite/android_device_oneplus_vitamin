@@ -72,7 +72,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so'),
     (
         'vendor/bin/mnld',
-        'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so',
         'vendor/lib64/liboplus_mtkcam_lightsensorprovider.so',
         'vendor/lib64/mt6983/libaalservice.so'
     ): blob_fixup()
