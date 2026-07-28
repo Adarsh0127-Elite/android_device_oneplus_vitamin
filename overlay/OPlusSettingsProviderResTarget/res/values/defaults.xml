@@ -5,8 +5,8 @@
 -->
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MANUFACTURER $2=MODEL-->
-    <string name="def_device_name">OnePlus Nord 3 5G</string>
+    <string name="def_device_name">OnePlus Ace 2V</string>
 
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">OnePlus Nord 3 5G</string>
+    <string name="def_device_name_simple">OnePlus Ace 2V</string>
 </resources>
