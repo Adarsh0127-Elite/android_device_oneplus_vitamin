@@ -44,6 +44,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so': blob_fixup()
         .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches'),
     (
         'system_ext/etc/init/init.vtservice.rc',
         'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc'
