@@ -25,8 +25,8 @@ ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6983
 
 # Project
-ro.product.hw=21871
-ro.separate.soft=21871
+ro.product.hw=22823
+ro.separate.soft=22823
 
 # Picture Quality
 persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
