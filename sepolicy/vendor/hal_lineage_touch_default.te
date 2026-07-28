@@ -1,4 +1,3 @@
-hal_client_domain(hal_lineage_touch_default, vendor_hal_oplus_touch)
 binder_call(hal_lineage_touch_default, hal_oplus_touch_aidl)
 
 allow hal_lineage_touch_default hal_oplus_touch_aidl_service:service_manager find;
