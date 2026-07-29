@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
 ENABLE_VENDOR_RIL_SERVICE := true
 
 $(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
 $(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
 
 $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
@@ -246,7 +247,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
-    OPlusTelephonyResTarget \
     OPlusTetheringConfigResTarget
 
 PRODUCT_PACKAGES += \
