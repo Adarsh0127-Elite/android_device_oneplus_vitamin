@@ -1347,7 +1347,7 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
-vendor/lib64/mt6983/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
+vendor/lib64/mt6983/libmnl.so;MODULE=libmnl_vendor;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
