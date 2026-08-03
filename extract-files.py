@@ -34,6 +34,7 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     'vendor.mediatek.hardware.videotelephony@1.0': lib_fixup_vendor_suffix,
     'libmnl': lib_fixup_vendor_suffix,
+    'libformatter': lib_fixup_vendor_suffix,
 }
 
 

@@ -1155,7 +1155,7 @@ vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_soft_mtk_wmadec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so;MODULE=libformatter_vendor
 vendor/lib64/libmp3dec_mtk.so
 
 # Media (MMS)
