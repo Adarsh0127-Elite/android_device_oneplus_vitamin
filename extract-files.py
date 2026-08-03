@@ -56,6 +56,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
+    'vendor/lib64/mt6983/libmtkcam_hal_android_app_cbadaptor.so': blob_fixup()
+        .remove_needed('android.frameworks.displayservice@1.0.so'),
     (
         'vendor/bin/hw/android.hardware.gnss-service.mediatek',
         'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'
