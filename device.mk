@@ -231,7 +231,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
