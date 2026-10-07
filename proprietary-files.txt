@@ -1,10 +1,6 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus Ace 2V (PHP110_15.0.0.1301(CN01)).
 
-# AEE
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
-
 # Audio
 odm/lib64/lib_aurisys_lvacfs.so
 odm/lib64/lib_aurisys_oprec.so;FIX_SONAME
