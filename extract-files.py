@@ -126,6 +126,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/wifi/p2p_supplicant_overlay.conf': blob_fixup()
+        .add_line_if_missing('p2p_go_vht=1'),
+    'vendor/etc/wifi/wpa_supplicant.conf': blob_fixup()
+        .add_line_if_missing('rsn_overriding=1'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
