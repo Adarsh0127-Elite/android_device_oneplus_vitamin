@@ -41,6 +41,7 @@ bluetooth.profile.vcp.controller.enabled=true
 ro.vendor.bt.platform=6983
 
 # Bootloader
+ro.frp.pst=/dev/block/by-name/frp
 ro.oem_unlock_supported=1
 
 # Camera
@@ -59,7 +60,7 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
-ro.vendor.afbc.enable=1
+ro.vendor.afbc.enable=0
 ro.vendor.camera.directfdyuv.support=1
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.camera3.zsl.default=260
@@ -71,7 +72,7 @@ vendor.camera.mdp.dre.enable=1
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
-debug.mediatek.disp_decompress=1
+debug.mediatek.disp_decompress=0
 debug.renderengine.backend=skiaglthreaded
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=0
