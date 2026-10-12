@@ -431,10 +431,6 @@ vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
-# Bluetooth (A2DP)
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so;MODULE_SUFFIX=_vendor
-
 # Camera
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/anc_cl_kernel.cache
