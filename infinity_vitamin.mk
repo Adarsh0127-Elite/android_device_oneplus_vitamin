@@ -7,13 +7,13 @@
 $(call inherit-product, device/oneplus/vitamin/device.mk)
 
 # Inherit from the LineageOS configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_BRAND := OnePlus
 PRODUCT_DEVICE := vitamin
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := PHP110
-PRODUCT_NAME := lineage_vitamin
+PRODUCT_NAME := infinity_vitamin
 PERF_ANIM_OVERRIDE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
@@ -25,3 +25,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=PHP110 \
     SystemDevice=OP5927 \
     SystemName=PHP110
+
+# Maintainer Name
+INFINITY_MAINTAINER := "adarsh_8300u"
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+
+# Whether Including Google Apps
+WITH_GAPPS := true
