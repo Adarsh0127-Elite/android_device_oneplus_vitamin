@@ -983,17 +983,6 @@ vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
 vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
 
-# Face
-odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service|aa5aab55751aa12a6891b18290e05a59be967d0b|6cda80f96950c3dfe0b8431ddfb085af4e62076e
-odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc|93e4a60abfe4aa84e85b9a90e7d4c563fe5b7f23
-odm/etc/vintf/manifest/manifest_oplus_face.xml|9aa36b4268c676d65f8e46a51ddbb916736d4d03
-odm/init.oplus.face.rc|a0aebf48805e65ca0198c0f5645499653dc0f478
-odm/lib64/libc++_shared.so|424b65135798136a375110d6b2df378ef40b6491
-odm/lib64/libcvface_api.so|20af317568b1d7dce42b736d7efb2907c86b1e14
-odm/lib64/libhci_face_camera_api.so|6ee11c201b1f0d7a0c2d1828bb486098fb483485
-odm/lib64/libstface_fd_api.so|82f2f1255595440009e1361c8f1afc4ce0891f27
-odm/lib64/libstfaceunlockppl.so|69099373b5423fb658527f641504f3b201abbda3
-
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/bin/init.oplus.fingerprints.sh
