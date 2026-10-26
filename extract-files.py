@@ -42,6 +42,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/mt6983/libmtkcam_stdutils.so'
     ): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    (
+        'vendor/lib64/libcodec2_mtk_venc.so',
+        'vendor/lib64/libcodec2_mtk_vdec.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
     'odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so': blob_fixup()
         .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service': blob_fixup()
