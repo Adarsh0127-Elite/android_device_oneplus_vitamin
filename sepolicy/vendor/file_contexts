@@ -40,6 +40,9 @@
 # Reserve
 /dev/block/platform/112b0000\.ufshci/by-name/oplusreserve[1-5]    u:object_r:vendor_reserve_partition:s0
 
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr    u:object_r:hal_power_default_exec:s0
+
 # Sensors
 /(odm|vendor/odm)/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service    u:object_r:hal_oplusSensor_aidl_exec:s0
 /dev/ssc_interactive                                                     u:object_r:ssc_interactive_device:s0
