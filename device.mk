@@ -323,8 +323,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/google/pixel \
     hardware/google/interfaces \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/oplus
