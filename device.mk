@@ -328,6 +328,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel/power-libperfmgr \
     hardware/google/pixel/thermal \
     hardware/mediatek \
+    hardware/mediatek/libion_mtk \
     hardware/mediatek/libmtkperf_client \
     hardware/oplus
 

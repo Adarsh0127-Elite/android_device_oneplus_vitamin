@@ -21,6 +21,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/oneplus/vitamin',
     'hardware/mediatek',
+    'hardware/mediatek/libion_mtk',
     'hardware/mediatek/libmtkperf_client',
     'hardware/oplus',
 ]
