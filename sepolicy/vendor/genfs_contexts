@@ -41,7 +41,6 @@ genfscon proc /shell-temp    u:object_r:vendor_proc_oplus_touch:s0
 genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
 
 # Wakeup
-genfscon sysfs /devices/platform/10001000.consys/wakeup                                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11016000.spi6/spi_master/spi6/spi6.0/synaptics_tcm_hbp.0/wakeup                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11d02000.i2c/i2c-3/3-0028/wakeup                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11d05000.i2c/i2c-8/8-0036/wakeup                                                                         u:object_r:sysfs_wakeup:s0
@@ -69,11 +68,9 @@ genfscon sysfs /devices/platform/charger/power_supply/ac/wakeup33               
 genfscon sysfs /devices/platform/charger/power_supply/battery/wakeup35                                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/mtk-mst-div-charger/wakeup42                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/mtk-slv-div-charger/wakeup43                                                        u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup34                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/wireless/wakeup36                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/usb/wakeup                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/wakeup                                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/odm/odm:oplus,track-charge/track/wakeup                                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11211000.usb1/wakeup                                                                                 u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1e000000.adspsys/wakeup                                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/power_supply/mtk-gauge/wakeup50                                                                           u:object_r:sysfs_wakeup:s0
