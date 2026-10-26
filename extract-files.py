@@ -112,7 +112,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock')
         .add_needed('libbase_shim.so'),
-    'vendor/lib64/mt6983/libmnl.so': blob_fixup()
+    'vendor/lib64/mt6983/libmnl_mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
     'vendor/lib64/libmidasserviceintf_aidl.so': blob_fixup()
         .replace_needed('android.frameworks.stats-V1-ndk_platform.so', 'android.frameworks.stats-V1-ndk.so'),
@@ -123,6 +123,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
         'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
+
+     'vendor/bin/mnld' : blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
     (
         'vendor/oneplus/vitamin/proprietary/odm/bin/touchDaemon',
         'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
