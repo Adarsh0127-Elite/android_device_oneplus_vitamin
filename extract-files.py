@@ -151,9 +151,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsysenv.so'
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
-        'vendor/bin/hw/mtkfusionrild': blob_fixup()
-        .add_needed('libutils-v32.so'),
-
      'vendor/bin/mnld' : blob_fixup()
         .replace_needed('libmnl.so', 'libmnl_mtk.so'),
     (
