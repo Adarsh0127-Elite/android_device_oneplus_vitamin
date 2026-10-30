@@ -8,7 +8,7 @@ dpm.img;AB
 dtbo.img;AB
 gpueb.img;AB
 gz.img;AB
-lk.img;AB
+lk.img;AB|01715f3bf4f46eba2ad8adc1ece00f685859e664
 logo.img;AB
 mcf_ota.img;AB
 mcupm.img;AB
