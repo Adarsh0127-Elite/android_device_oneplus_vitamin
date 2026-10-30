@@ -1109,7 +1109,6 @@ vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
@@ -1343,7 +1342,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so|5d3a54d683405b95b
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so|0e852754cb733a53484a4e76a4ca362bb5d52d08
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so|76d2195f9c8cd683ef389daf44c101b6f055e3c4
 vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so|27d62cb9a6af07929bc6cfc83566ed781a5d1933
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so|68127e917b1df16daf3afbc8ab92266a5c247799
 
 # Sensors
 odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
