@@ -888,7 +888,6 @@ vendor/firmware/soc7_0_ram_wmmcu_1_1_hdr.bin
 
 # Display (AAL)
 vendor/lib64/libaal_cust.so
-vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libdre.so
 vendor/lib64/mt6983/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
