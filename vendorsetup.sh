@@ -8,3 +8,6 @@ cd packages/apps/Aperture
 git fetch https://github.com/Adarsh0127-Elite/android_packages_apps_Aperture.git
 git cherry-pick 9509277efc852ad8bdcce204e0d9cfe104b6d190
 cd ../../..
+
+echo "Cloning Dolby"
+git clone https://github.com/Adarsh0127-Elite/hardware_dolby.git hardware/dolby
