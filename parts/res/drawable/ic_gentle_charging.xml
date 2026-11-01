@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:tint="?android:attr/colorControlNormal"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M15.67,4H14V2H10V4H8.33C7.6,4 7,4.6 7,5.33V20.67C7,21.4 7.6,22 8.33,22H15.67C16.4,22 17,21.4 17,20.67V5.33C17,4.6 16.4,4 15.67,4M15,20H9V6H15V20M12,18A4,4 0 0,0 16,14C16,11.5 13,9 12,8C11,9 8,11.5 8,14A4,4 0 0,0 12,18M12,11.5C12.71,12.5 14,13.5 14,14.5A2,2 0 0,1 12,16.5A2,2 0 0,1 10,14.5C10,13.5 11.29,12.5 12,11.5Z" />
+</vector>

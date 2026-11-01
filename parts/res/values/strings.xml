@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="device_settings_title">OnePlus Settings</string>
+
+    <!-- DC Dimming -->
+    <string name="dc_dimming_title">DC Dimming</string>
+    <string name="dc_dimming_summary">Reduce screen flicker at low brightness</string>
+    <string name="dc_dimming_footer">Reduces screen flicker in low light to minimize eye strain. May cause slight color tinting at low brightness.</string>
+
+    <!-- Gentle / Slow Charging -->
+    <string name="gentle_charging_title">Gentle charging</string>
+    <string name="gentle_charging_summary">Limit charging power to extend battery lifespan</string>
+    <string name="gentle_charging_tuning_title">Power limit tuning</string>
+    <string name="gentle_charging_watt_title">Target charging rate</string>
+    <string name="gentle_charging_watt_format">Power cap: %1$d W</string>
+    <string name="gentle_charging_watt_min">10 W</string>
+    <string name="gentle_charging_watt_max">30 W</string>
+    <string name="gentle_charging_tile_active_sub">%1$d W cap</string>
+    <string name="gentle_charging_tile_inactive_sub">Off</string>
+    <string name="gentle_charging_footer">Caps charging wattage to reduce battery heat and degradation. Recommended for overnight charging.</string>
+</resources>

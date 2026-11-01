@@ -280,6 +280,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery
 
+# Parts
+PRODUCT_PACKAGES += \
+    OnePlusParts
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/parts/privapp_whitelist_org.settings.oplusparts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp_whitelist_org.settings.oplusparts.xml
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \

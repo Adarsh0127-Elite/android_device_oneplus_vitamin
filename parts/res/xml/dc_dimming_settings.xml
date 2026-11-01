@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/dc_dimming_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="dc_dimming_enable"
+        android:title="@string/dc_dimming_title"
+        android:defaultValue="false" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="dc_dimming_footer"
+        android:title="@string/dc_dimming_footer"
+        android:selectable="false" />
+
+</PreferenceScreen>

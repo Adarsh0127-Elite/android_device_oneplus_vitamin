@@ -1,0 +1,5 @@
+# DC Dimming
+rw_dir_file(system_app, vendor_sysfs_graphics)
+
+# Gentle Charging
+rw_dir_file(system_app, vendor_sysfs_usb_supply)

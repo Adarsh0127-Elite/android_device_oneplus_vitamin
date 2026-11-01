@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/gentle_charging_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="gentle_charging_enable"
+        android:title="@string/gentle_charging_title"
+        android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:key="gentle_charging_tuning_category"
+        android:title="@string/gentle_charging_tuning_title">
+
+        <Preference
+            android:key="gentle_charging_watt_status"
+            android:title="@string/gentle_charging_watt_title"
+            android:selectable="false" />
+
+        <com.android.settingslib.widget.SliderPreference
+            android:key="gentle_charging_watt_slider"
+            android:min="10"
+            android:max="30"
+            android:defaultValue="15"
+            app:showSeekBarValue="false"
+            app:updatesContinuously="true"
+            app:textStart="@string/gentle_charging_watt_min"
+            app:textEnd="@string/gentle_charging_watt_max" />
+
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="gentle_charging_footer"
+        android:title="@string/gentle_charging_footer"
+        android:selectable="false" />
+
+</PreferenceScreen>

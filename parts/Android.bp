@@ -1,0 +1,21 @@
+//
+// Copyright (C) 2018-2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "OnePlusParts",
+    certificate: "platform",
+    defaults: ["SettingsLibDefaults"],
+    srcs: ["src/**/*.kt"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+    ],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
