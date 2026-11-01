@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- GameBar Position Options -->
+    <string-array name="game_bar_position_entries">
+        <item>@string/game_bar_position_top_left</item>
+        <item>@string/game_bar_position_top_center</item>
+        <item>@string/game_bar_position_top_right</item>
+        <item>@string/game_bar_position_bottom_left</item>
+        <item>@string/game_bar_position_bottom_center</item>
+        <item>@string/game_bar_position_bottom_right</item>
+        <item>@string/game_bar_position_draggable</item>
+    </string-array>
+
+    <string-array name="game_bar_position_values">
+        <item>top_left</item>
+        <item>top_center</item>
+        <item>top_right</item>
+        <item>bottom_left</item>
+        <item>bottom_center</item>
+        <item>bottom_right</item>
+        <item>draggable</item>
+    </string-array>
+
+    <!-- GameBar Split Mode Options -->
+    <string-array name="game_bar_split_mode_entries">
+        <item>@string/game_bar_split_mode_stacked</item>
+        <item>@string/game_bar_split_mode_side_by_side</item>
+    </string-array>
+
+    <string-array name="game_bar_split_mode_values">
+        <item>stacked</item>
+        <item>side_by_side</item>
+    </string-array>
+
+    <!-- GameBar Color Options -->
+    <string-array name="game_bar_color_entries">
+        <item>@string/game_bar_color_white</item>
+        <item>@string/game_bar_color_black</item>
+        <item>@string/game_bar_color_red</item>
+        <item>@string/game_bar_color_green</item>
+        <item>@string/game_bar_color_blue</item>
+        <item>@string/game_bar_color_yellow</item>
+        <item>@string/game_bar_color_cyan</item>
+        <item>@string/game_bar_color_magenta</item>
+        <item>@string/game_bar_color_light_gray</item>
+        <item>@string/game_bar_color_dark_gray</item>
+    </string-array>
+
+    <string-array name="game_bar_color_values">
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+        <item>#FF0000</item>
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#FFFF00</item>
+        <item>#00FFFF</item>
+        <item>#FF00FF</item>
+        <item>#CCCCCC</item>
+        <item>#333333</item>
+    </string-array>
+
+    <!-- GameBar Update Interval Options -->
+    <string-array name="game_bar_update_interval_entries">
+        <item>@string/game_bar_update_interval_fast</item>
+        <item>@string/game_bar_update_interval_normal</item>
+        <item>@string/game_bar_update_interval_slow</item>
+        <item>@string/game_bar_update_interval_very_slow</item>
+    </string-array>
+
+    <string-array name="game_bar_update_interval_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+
+    <!-- GameBar Long Press Timeout Options -->
+    <string-array name="game_bar_longpress_timeout_entries">
+        <item>@string/game_bar_longpress_timeout_very_fast</item>
+        <item>@string/game_bar_longpress_timeout_fast</item>
+        <item>@string/game_bar_longpress_timeout_normal</item>
+        <item>@string/game_bar_longpress_timeout_slow</item>
+    </string-array>
+
+    <string-array name="game_bar_longpress_timeout_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <!-- Refresh Rate Options -->
+    <string-array name="refresh_rate_entries">
+        <item>@string/refresh_rate_auto</item>
+        <item>@string/refresh_rate_60hz</item>
+        <item>@string/refresh_rate_90hz</item>
+        <item>@string/refresh_rate_120hz</item>
+    </string-array>
+
+    <string-array name="refresh_rate_values">
+        <item>0</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+
+</resources>

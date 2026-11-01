@@ -10,7 +10,7 @@ import androidx.preference.Preference
 import androidx.preference.Preference.OnPreferenceChangeListener
 import com.android.settingslib.widget.MainSwitchPreference
 import com.android.settingslib.widget.SettingsBasePreferenceFragment
-import org.settings.oplusparts.PREF_DC_DIMMING_KEY
+import org.settings.oplusparts.Constants.PREF_DC_DIMMING_KEY
 import org.settings.oplusparts.R
 
 class DcDimmingFragment : SettingsBasePreferenceFragment(), OnPreferenceChangeListener {

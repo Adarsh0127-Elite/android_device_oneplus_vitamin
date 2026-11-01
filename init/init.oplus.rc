@@ -79,6 +79,7 @@ on init
     chmod 0666 /sys/class/oplus_chg/battery/battery_notify_code
     chmod 0666 /sys/class/oplus_chg/battery/normal_cool_down
     chmod 0666 /sys/class/oplus_chg/battery/normal_current_now
+    chmod 0660 /sys/class/oplus_chg/battery/mmi_charging_enable
     chmod 0660 /sys/class/oplus_chg/battery/slow_chg_en
     chmod 0666 /sys/class/oplus_chg/common/track_hidl
     chmod 0666 /sys/class/power_supply/battery/current_now

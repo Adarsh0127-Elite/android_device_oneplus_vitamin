@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/pause_charging_title">
+
+    <PreferenceCategory
+        android:key="pause_charging_category"
+        android:title="@string/pause_charging_category_title">
+
+        <SwitchPreferenceCompat
+            android:key="pause_charging"
+            android:title="@string/pause_charging_title"
+            android:icon="@drawable/ic_pause_charging"
+            android:summary="@string/pause_charging_summary"
+            android:persistent="false" />
+
+        <org.settings.oplusparts.preferences.CustomSeekBarPreference
+            android:key="pause_charging_target"
+            android:title="@string/pause_charging_target_title"
+            android:summary="@string/pause_charging_target_summary"
+            android:defaultValue="1"
+            android:max="99"
+            settings:min="1"
+            settings:interval="1"
+            settings:units="%"
+            settings:showSign="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pause_charging_app_picker_title"
+        android:key="pause_charging_applications">
+        <Preference
+            android:key="pause_charging_add_packages"
+            android:icon="@drawable/ic_add"
+            android:title="@string/add_pause_charging_package_title" />
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="pause_charging_info"
+        android:title="@string/pause_charging_info_title"
+        android:selectable="false" />
+
+</PreferenceScreen>

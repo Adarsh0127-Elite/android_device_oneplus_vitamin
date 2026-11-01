@@ -1,5 +1,8 @@
 # DC Dimming
 rw_dir_file(system_app, vendor_sysfs_graphics)
 
-# Gentle Charging
+# Gentle Charging / Pause Charging
 rw_dir_file(system_app, vendor_sysfs_usb_supply)
+
+# GameBar GPU metrics
+r_dir_file(system_app, proc_ged)

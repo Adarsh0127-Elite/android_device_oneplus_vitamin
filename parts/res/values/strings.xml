@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018-2026 The LineageOS Project
+     Copyright (C) 2026 Evolution X
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <string name="device_settings_title">OnePlus Settings</string>
+    <!-- Main Dashboard Entry -->
+    <string name="oneplus_parts_title">OnePlus Parts</string>
+    <string name="oneplus_parts_summary">Display, charging, gaming and more</string>
+    <string name="device_settings_title">OnePlus Parts</string>
+    <string name="device_settings_summary">Display, charging, gaming and more</string>
+
+    <!-- Categories -->
+    <string name="category_display">Display</string>
+    <string name="category_charging">Charging</string>
+    <string name="category_gaming">Gaming</string>
+    <string name="category_alert_slider">Alert slider</string>
 
     <!-- DC Dimming -->
     <string name="dc_dimming_title">DC Dimming</string>
     <string name="dc_dimming_summary">Reduce screen flicker at low brightness</string>
     <string name="dc_dimming_footer">Reduces screen flicker in low light to minimize eye strain. May cause slight color tinting at low brightness.</string>
+
+    <!-- Refresh Rate -->
+    <string name="refresh_rate_title">Refresh rate</string>
+    <string name="refresh_rate_summary">Choose global refresh rate or customize per app</string>
+    <string name="refresh_rate_global_title">Global refresh rate</string>
+    <string name="refresh_rate_auto">Auto</string>
+    <string name="refresh_rate_60hz">60 Hz</string>
+    <string name="refresh_rate_90hz">90 Hz</string>
+    <string name="refresh_rate_120hz">120 Hz</string>
+    <string name="refresh_rate_app_picker_title">Per-app refresh rate</string>
+    <string name="add_refresh_rate_package_title">Add app</string>
+    <string name="refresh_rate_app_title_dialog">Select Refresh Rate</string>
+    <string name="no_app_overrides">No app-specific overrides configured</string>
+    <string name="add_app">Add app</string>
 
     <!-- Gentle / Slow Charging -->
     <string name="gentle_charging_title">Gentle charging</string>
@@ -19,7 +44,139 @@
     <string name="gentle_charging_watt_format">Power cap: %1$d W</string>
     <string name="gentle_charging_watt_min">10 W</string>
     <string name="gentle_charging_watt_max">30 W</string>
+    <string name="gentle_charging_watt_summary">%1$d W</string>
+    <string name="gentle_charging_tile_active">Gentle charging</string>
+    <string name="gentle_charging_tile_inactive">Gentle charging</string>
     <string name="gentle_charging_tile_active_sub">%1$d W cap</string>
     <string name="gentle_charging_tile_inactive_sub">Off</string>
     <string name="gentle_charging_footer">Caps charging wattage to reduce battery heat and degradation. Recommended for overnight charging.</string>
+
+    <!-- Pause Charging -->
+    <string name="pause_charging_title">Pause charging</string>
+    <string name="pause_charging_summary">Pause battery charging when connected to power</string>
+    <string name="pause_charging_category_title">Pause charging configuration</string>
+    <string name="pause_charging_target_title">Target level</string>
+    <string name="pause_charging_target_summary">Battery will charge until it reaches target level, then pause charging will be activated.</string>
+    <string name="pause_charging_app_picker_title">Auto-enable pause charging for the following apps</string>
+    <string name="add_pause_charging_package_title">Add app</string>
+    <string name="pause_charging_info_title">Pause charging stops battery charging when connected to power, powering the device directly to reduce heat and battery wear during gaming or demanding tasks.</string>
+    <string name="pause_charging_disabled_by_lineage_health">Lineage charging control is currently active. Pause charging is disabled to avoid conflicting policies.</string>
+    <string name="pause_charging_unavailable">Hardware charging control is unavailable on this device</string>
+
+    <!-- Custom SeekBar Preference -->
+    <string name="custom_seekbar_value">Value: </string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: </string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+
+    <!-- GameBar -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Performance overlay with FPS, CPU, RAM, and temperature</string>
+    <string name="game_bar_enable">Enable GameBar</string>
+    <string name="game_bar_enable_summary">Show real-time performance metrics overlay on screen</string>
+    <string name="game_bar_applications">Applications</string>
+    <string name="game_bar_add_packages_summary">Add apps that should auto-enable GameBar</string>
+    <string name="game_bar_stats_display">Stats Display</string>
+    <string name="game_bar_fps_enable">FPS</string>
+    <string name="game_bar_fps_enable_summary">Show current frames per second</string>
+    <string name="game_bar_temp_enable">Battery Temperature</string>
+    <string name="game_bar_temp_enable_summary">Show device battery temperature</string>
+    <string name="game_bar_cpu_usage_enable">CPU Usage</string>
+    <string name="game_bar_cpu_usage_enable_summary">Show CPU usage percentage</string>
+    <string name="game_bar_cpu_clock_enable">CPU Clock Speeds</string>
+    <string name="game_bar_cpu_clock_enable_summary">Show CPU clock speeds for cores</string>
+    <string name="game_bar_cpu_temp_enable">CPU Temperature</string>
+    <string name="game_bar_cpu_temp_enable_summary">Show CPU temperature from thermal zone</string>
+    <string name="game_bar_ram_enable">RAM Usage</string>
+    <string name="game_bar_ram_enable_summary">Show RAM usage in MB</string>
+    <string name="game_bar_gpu_usage_enable">GPU Usage</string>
+    <string name="game_bar_gpu_usage_enable_summary">Show GPU usage percentage</string>
+    <string name="game_bar_gpu_clock_enable">GPU Clock Speed</string>
+    <string name="game_bar_gpu_clock_enable_summary">Show current GPU frequency</string>
+    <string name="game_bar_gpu_temp_enable">GPU Temperature</string>
+    <string name="game_bar_gpu_temp_enable_summary">Show GPU temperature</string>
+
+    <string name="game_bar_ui_customization">UI Customization</string>
+    <string name="game_bar_position">Overlay Position</string>
+    <string name="game_bar_position_summary">Select where the overlay appears on screen</string>
+    <string name="game_bar_reset_position">Reset Position</string>
+    <string name="game_bar_reset_position_summary">Return overlay to top-left corner</string>
+    <string name="game_bar_split_mode">Layout Mode</string>
+    <string name="game_bar_split_mode_summary">Choose how stats are arranged (Stacked or Side-by-Side)</string>
+    <string name="game_bar_text_size">Text Size</string>
+    <string name="game_bar_text_size_summary">Adjust overlay text size</string>
+    <string name="game_bar_background_alpha">Background Transparency</string>
+    <string name="game_bar_background_alpha_summary">Adjust overlay background opacity (0-100%)</string>
+    <string name="game_bar_corner_radius">Corner Radius</string>
+    <string name="game_bar_corner_radius_summary">Adjust how rounded overlay corners are</string>
+    <string name="game_bar_padding">Padding</string>
+    <string name="game_bar_padding_summary">Adjust space around stats</string>
+    <string name="game_bar_item_spacing">Item Spacing</string>
+    <string name="game_bar_item_spacing_summary">Adjust spacing between stat lines</string>
+    <string name="game_bar_title_color">Title Color</string>
+    <string name="game_bar_title_color_summary">Color for the labels</string>
+    <string name="game_bar_value_color">Value Color</string>
+    <string name="game_bar_value_color_summary">Color for the numeric values</string>
+    <string name="game_bar_update_interval">Update Interval</string>
+    <string name="game_bar_update_interval_summary">How often overlay refreshes values (milliseconds)</string>
+
+    <string name="game_bar_position_top_left">Top Left</string>
+    <string name="game_bar_position_top_center">Top Center</string>
+    <string name="game_bar_position_top_right">Top Right</string>
+    <string name="game_bar_position_bottom_left">Bottom Left</string>
+    <string name="game_bar_position_bottom_center">Bottom Center</string>
+    <string name="game_bar_position_bottom_right">Bottom Right</string>
+    <string name="game_bar_position_draggable">Draggable</string>
+    <string name="game_bar_split_mode_stacked">Stacked (Vertical)</string>
+    <string name="game_bar_split_mode_side_by_side">Side-by-Side (Horizontal)</string>
+    <string name="game_bar_color_white">White</string>
+    <string name="game_bar_color_black">Black</string>
+    <string name="game_bar_color_red">Red</string>
+    <string name="game_bar_color_green">Green</string>
+    <string name="game_bar_color_blue">Blue</string>
+    <string name="game_bar_color_yellow">Yellow</string>
+    <string name="game_bar_color_cyan">Cyan</string>
+    <string name="game_bar_color_magenta">Magenta</string>
+    <string name="game_bar_color_light_gray">Light Gray</string>
+    <string name="game_bar_color_dark_gray">Dark Gray</string>
+    <string name="game_bar_update_interval_fast">500ms (Fast)</string>
+    <string name="game_bar_update_interval_normal">1000ms (Normal)</string>
+    <string name="game_bar_update_interval_slow">2000ms (Slow)</string>
+    <string name="game_bar_update_interval_very_slow">3000ms (Very Slow)</string>
+    <string name="game_bar_longpress_timeout_very_fast">500ms (Very Fast)</string>
+    <string name="game_bar_longpress_timeout_fast">1000ms (Fast)</string>
+    <string name="game_bar_longpress_timeout_normal">1500ms (Normal)</string>
+    <string name="game_bar_longpress_timeout_slow">2000ms (Slow)</string>
+
+    <string name="game_bar_gestures">Gesture Controls</string>
+    <string name="game_bar_single_tap_toggle">Single Tap Toggle</string>
+    <string name="game_bar_single_tap_toggle_summary">Tap overlay to switch between stacked and side-by-side layout</string>
+    <string name="game_bar_doubletap_capture">Double Tap Capture</string>
+    <string name="game_bar_doubletap_capture_summary">Double-tap overlay to start/stop capture logs</string>
+    <string name="game_bar_longpress_enable">Long Press Settings</string>
+    <string name="game_bar_longpress_enable_summary">Long-press overlay to open GameBar settings</string>
+    <string name="game_bar_longpress_timeout">Long Press Duration</string>
+    <string name="game_bar_longpress_timeout_summary">How long to hold before settings open (milliseconds)</string>
+
+    <string name="game_bar_data_capture">Data Capture</string>
+    <string name="game_bar_capture_start">Start Logging</string>
+    <string name="game_bar_capture_start_summary">Begin capturing FPS and performance metrics</string>
+    <string name="game_bar_capture_stop">Stop Logging</string>
+    <string name="game_bar_capture_stop_summary">Stop capturing performance data</string>
+    <string name="game_bar_capture_export">Export Log Data</string>
+    <string name="game_bar_capture_export_summary">Save captured data as CSV file</string>
+
+    <string name="overlay_permission_required">Overlay permission is required</string>
+    <string name="overlay_permission_granted">Overlay permission granted</string>
+    <string name="overlay_permission_denied">Overlay permission denied</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Toggle the GameBar overlay</string>
+
+    <!-- Alert Slider -->
+    <string name="alert_slider_title">Alert slider actions</string>
+    <string name="alert_slider_summary">Customize top, middle, and bottom positions</string>
+
+    <!-- Dialogs -->
+    <string name="delete">Delete</string>
+    <string name="delete_message">Remove this app from the list?</string>
 </resources>

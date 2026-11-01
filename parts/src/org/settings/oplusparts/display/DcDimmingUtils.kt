@@ -7,9 +7,9 @@ package org.settings.oplusparts.display
 
 import android.content.Context
 import androidx.preference.PreferenceManager
-import org.settings.oplusparts.DC_DIMMING_NODE
+import org.settings.oplusparts.Constants.DC_DIMMING_NODE
+import org.settings.oplusparts.Constants.PREF_DC_DIMMING_KEY
 import org.settings.oplusparts.FileUtils
-import org.settings.oplusparts.PREF_DC_DIMMING_KEY
 
 object DcDimmingUtils {
 

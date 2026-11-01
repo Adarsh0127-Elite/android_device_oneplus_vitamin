@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018-2026 The LineageOS Project
+     Copyright (C) 2026 Evolution X
      SPDX-License-Identifier: Apache-2.0
 -->
 <permissions>
     <privapp-permissions package="org.settings.oplusparts">
-        <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <permission name="android.permission.MANAGE_ACTIVITY_TASKS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
     </privapp-permissions>
 </permissions>

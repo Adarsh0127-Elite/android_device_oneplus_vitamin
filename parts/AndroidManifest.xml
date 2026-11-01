@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018-2026 The LineageOS Project
+     Copyright (C) 2026 Evolution X
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -8,6 +9,11 @@
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS" />
 
     <application
         android:allowBackup="false"
@@ -26,21 +32,56 @@
             </intent-filter>
         </receiver>
 
+        <!-- Main OnePlus Parts Activity (Top-level Settings entry under The Evolver) -->
+        <activity
+            android:name=".OnePlusPartsActivity"
+            android:label="@string/oneplus_parts_title"
+            android:theme="@style/Theme.SubSettingsBase.Expressive"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data
+                android:name="com.android.settings.group_key"
+                android:value="top_level_evolution_category" />
+            <meta-data
+                android:name="com.android.settings.keyhint"
+                android:value="oneplus_parts_settings" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-150" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_oneplus_parts" />
+            <meta-data
+                android:name="com.android.settings.title"
+                android:resource="@string/oneplus_parts_title" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/oneplus_parts_summary" />
+            <meta-data
+                android:name="com.android.settings.icon_color_scheme"
+                android:value="red" />
+        </activity>
+
+        <!-- Central OnePlus Parts background service -->
+        <service
+            android:name=".OnePlusPartsService"
+            android:exported="false" />
+
         <!-- DC Dimming Activity -->
         <activity
             android:name=".display.DcDimmingActivity"
             android:label="@string/dc_dimming_title"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/dc_dimming_summary" />
         </activity>
 
         <!-- DC Dimming Quick Settings Tile -->
@@ -55,21 +96,43 @@
             </intent-filter>
         </service>
 
+        <!-- Refresh Rate Activity -->
+        <activity
+            android:name=".refreshrate.RefreshRateActivity"
+            android:label="@string/refresh_rate_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Refresh Rate Monitor Service -->
+        <service
+            android:name=".refreshrate.RefreshRateMonitorService"
+            android:exported="false" />
+
+        <!-- Refresh Rate Quick Settings Tile -->
+        <service
+            android:name=".refreshrate.RefreshRateTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_refresh_rate"
+            android:label="@string/refresh_rate_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
         <!-- Gentle Charging Activity -->
         <activity
             android:name=".power.GentleChargingActivity"
             android:label="@string/gentle_charging_title"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.battery" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/gentle_charging_summary" />
         </activity>
 
         <!-- Gentle Charging Quick Settings Tile -->
@@ -83,6 +146,75 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
+
+        <!-- Pause Charging Activity -->
+        <activity
+            android:name=".power.PauseChargingActivity"
+            android:label="@string/pause_charging_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pause Charging Manager Service -->
+        <service
+            android:name=".power.PauseChargingManager"
+            android:exported="false" />
+
+        <!-- Pause Charging Quick Settings Tile -->
+        <service
+            android:name=".power.PauseChargingTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_pause_charging"
+            android:label="@string/pause_charging_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Game Bar Settings Activity -->
+        <activity
+            android:name=".gamebar.GameBarSettingsActivity"
+            android:label="@string/game_bar_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <!-- Game Bar Monitor Service -->
+        <service
+            android:name=".gamebar.GameBarMonitorService"
+            android:exported="false" />
+
+        <!-- Game Bar Quick Settings Tile -->
+        <service
+            android:name=".gamebar.GameBarTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_game_bar"
+            android:label="@string/game_bar_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Search Indexables Provider for Settings search -->
+        <provider
+            android:name=".ConfigPanelSearchIndexablesProvider"
+            android:authorities="org.settings.oplusparts"
+            android:multiprocess="false"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.READ_SEARCH_INDEXABLES"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
+            </intent-filter>
+        </provider>
 
     </application>
 </manifest>
