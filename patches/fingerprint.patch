@@ -1,0 +1,39 @@
+From 7e9b0487053e1a61389df051aa27d2c38ce78bf1 Mon Sep 17 00:00:00 2001
+From: Adarsh0127-Elite <adarshmoharana027@gmail.com>
+Date: Mon, 2 Nov 2026 03:55:00 +0000
+Subject: [PATCH] SystemUI: Fix IllegalAccessError in UdfpsTouchOverlay
+
+Make GhbmIlluminationListener interface public in UdfpsSurfaceView
+so that UdfpsTouchOverlay's SAM adapter can implement it across package
+boundaries (com.android.systemui.biometrics vs com.android.systemui.biometrics.ui.view),
+preventing SystemUI fatal crashes when fingerprint authentication or enrollment is triggered.
+Also invoke super.onFinishInflate() in UdfpsTouchOverlay.
+
+Change-Id: I29d7e5898867568593309f7a4ea3c85f9eb6d101
+---
+diff --git a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsSurfaceView.java b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsSurfaceView.java
+index 3bfdddea3..dae25f71a 100644
+--- a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsSurfaceView.java
++++ b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsSurfaceView.java
+@@ -41,7 +41,7 @@ public class UdfpsSurfaceView extends SurfaceView implements SurfaceHolder.Callb
+     /**
+      * Notifies {@link UdfpsView} when to enable GHBM illumination.
+      */
+-    interface GhbmIlluminationListener {
++    public interface GhbmIlluminationListener {
+         /**
+          * @param surface the surface for which GHBM should be enabled.
+          * @param onDisplayConfigured a runnable that should be run after GHBM is enabled.
+diff --git a/packages/SystemUI/src/com/android/systemui/biometrics/ui/view/UdfpsTouchOverlay.kt b/packages/SystemUI/src/com/android/systemui/biometrics/ui/view/UdfpsTouchOverlay.kt
+index a7c9ffdec..3cb87968a 100644
+--- a/packages/SystemUI/src/com/android/systemui/biometrics/ui/view/UdfpsTouchOverlay.kt
++++ b/packages/SystemUI/src/com/android/systemui/biometrics/ui/view/UdfpsTouchOverlay.kt
+@@ -42,6 +42,7 @@ class UdfpsTouchOverlay(context: Context, attrs: AttributeSet?) : FrameLayout(co
+         private set
+ 
+     override fun onFinishInflate() {
++        super.onFinishInflate()
+         ghbmView = findViewById(R.id.hbm_view)
+     }
+ 
+-- 
